@@ -23,7 +23,7 @@ namespace GoodsTnved.Controllers
             {
                 return BadRequest("Code  can not be null and length must be 10");
             }
-            var goods =await _abstractDapperRepository.GetByID(code);
+            var goods =await _abstractDapperRepository.GetByCode(code);
 
             return Ok(goods);
 
