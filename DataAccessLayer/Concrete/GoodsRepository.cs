@@ -26,7 +26,7 @@ namespace DataAccessLayer.Concrete
             _databaseContext = databaseContext;
             conn = new SqlConnection (_databaseContext.GetConnectionString());
         }
-        public async Task <Goods> GetByID(string code)
+        public async Task <Goods> GetByCode(string code)
         {
             try
             {

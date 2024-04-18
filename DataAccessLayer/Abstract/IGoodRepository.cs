@@ -10,6 +10,6 @@ namespace DataAccessLayer.Abstract
     public interface IGoodRepository
     {
        // Task<T> Get(string code);
-        Task<Goods> GetByID(string code);
+        Task<Goods> GetByCode(string code);
     }
 }
