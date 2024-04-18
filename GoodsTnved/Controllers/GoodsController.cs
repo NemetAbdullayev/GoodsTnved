@@ -10,10 +10,10 @@ namespace GoodsTnved.Controllers
     public class GoodsController : ControllerBase
     {
         public readonly IGoodRepository _abstractDapperRepository;
-        public GoodsController(IGoodRepository poiAbstractDapperRepository)
+        public GoodsController(IGoodRepository abstractDapperRepository)
 
         {
-            _abstractDapperRepository = poiAbstractDapperRepository;
+            _abstractDapperRepository = abstractDapperRepository;
           
         }
         [HttpGet]
